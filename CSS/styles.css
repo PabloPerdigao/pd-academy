@@ -1,5 +1,75 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* RESET CSS */
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+/* VARIÁVEIS DE CORES */
+
+  :root {
+    --primary-bg-blue-dark: #000814;
+    --secondary-bg-blue: #001D3D;
+    --primary-blue-color: #003566;
+    --primary-yellow-color: #FFC300;
+    --secondary-yellow-color: #FFD60A;
+    --text-color: #faf8f0;
+  }
+
+
+  .blue-dark-color {
+    color: var(--primary-bg-blue-dark)
+  } 
+
+  .bg-blue {
+    background-color: var(--secondary-bg-blue)
+  }
+
+  .blue-color{
+    color: var(--primary-blue-color);
+  }
+
+  .btn-yellow {
+  background-color: var(--secondary-yellow-color);
+  }
+
+  .yellow-color{
+    color: var(--primary-yellow-color);
+  }
+
+  .text-color{
+    color: var(--text-color);
+  }
+
+
+/*  ESTILIZAÇÃO GERAL */
+
+body {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  color: var(--text-color);
+  background-color: var(--primary-bg-blue-dark);
+}
+
+
+
+/* NAVBAR */
+
+.btn-yellow:hover{
+  background-color: var(--primary-yellow-color);
+  font-weight: bold;
+  color: var(--primary-bg-blue-dark);
+}
+
+@media(max-width: 768px){
+  #menu-control:checked ~ .navbar-collapse {
+    display: block !important;
+  }
+
+  .navbar-collapse {
+    transition: all 0.3s ease-in-out;
+  }
+
+  
+
 }

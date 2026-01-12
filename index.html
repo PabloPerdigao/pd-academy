@@ -1,28 +1,91 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PD Academy - Dê um boost em sua carreira</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PD Academy - Dê um boost em sua carreira</title>
 
-  <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-  
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
 
     <!-- Booststrap Icons -->
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
 
-  <!-- CSS -->
-   <link rel="stylesheet" href="./CSS/styles.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./CSS/styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <nav
+        class="navbar navbar-expand-lg navbar-dark bg-blue navbar-sticky-top"
+      >
+        <div class="container">
+          <!-- uso da logo dentro do h1 por quesões de SEO -->
+          <h1 class="pd-logo">
+            <a class="navbar-brand" href="#">
+              <img
+                src="/assets/images/logo-pd-academy.png"
+                alt="PD Academy Logo"
+                width="180"
+                height="50"
+              />
+            </a>
+          </h1>
+
+          <!-- uso do checkbox para controlar o menu e expandir  a nav em dispositivos <768px(breakpoint medium no bootstrap).  -->
+
+          <input type="checkbox" id="menu-control" class="d-none" />
+
+          <label
+            for="menu-control"
+            class="navbar-toggler d-lg-none"
+            type="button"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </label>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Início</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#cursos">Formações</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contato">Inscrição</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link btn btn-yellow blue-dark-color btn-sm ms-lg-2 px-3 "
+                  href="dashboard.html"
+                >
+                  Acessar Dashboard
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
 
 
-</head>
-<body>
-  
-  
-</body>
+  </body>
 </html>
