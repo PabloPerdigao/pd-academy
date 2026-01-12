@@ -34,7 +34,7 @@
     <!-- Navbar -->
     <header>
       <nav
-        class="navbar navbar-expand-lg navbar-dark bg-blue navbar-sticky-top"
+        class="navbar navbar-expand-lg navbar-dark navbar-sticky-top py-3"
       >
         <div class="container">
           <!-- uso da logo dentro do h1 por quesões de SEO -->
@@ -74,10 +74,10 @@
               </li>
               <li class="nav-item">
                 <a
-                  class="nav-link btn btn-yellow blue-dark-color btn-sm ms-lg-2 px-3 "
-                  href="dashboard.html"
-                >
-                  Acessar Dashboard
+                  class="nav-link btn btn-yellow blue-dark-color btn-sm ms-lg-2 px-3 rounded-2"
+                  href="#"
+                >Assinar 
+                  <i class="bi bi-arrow-right-square"></i>
                 </a>
               </li>
             </ul>
@@ -86,6 +86,44 @@
       </nav>
     </header>
 
+    <main>
+      <!-- hero section -->
+      <section class="hero-section m-5 py-5">
+        <div class="container container-fluid ">
+          <div class="row align-items-center">
+            
+            <div class="col-12 col-lg-6 order-1 order-lg-2  text-center mb-4 mb-lg-0">
+              <video src="/assets/video-hero.mp4" 
+              alt="Estudante utilizando notebook na PD Case" 
+              class="w-100 rounded-3 shadow-lg" autoplay muted loop playsinline></video>
+            </div>
+            
+            <div class="col-12 col-lg-6 order-2 order-lg-1 text-center text-lg-start">
+              <h2 class="fw-bold mb-2">Dê um boost em sua carreira</h2>
+              <hr class="border-2 border-primary mb-4 w-auto" />
+              <p class="g-4">
+                A plataforma completa para começar do zero ou se especializar,
+                estudar no seu ritmo e criar projetos práticos que te preparam
+                de verdade para o mercado.
+              </p>
+            </div>
 
+
+            <div class="container container-fluid d-flex justify-content-center m-5 order-3">
+
+              <div class="d-flex gap-3">
+                <a href="#trilhas" class="btn btn-outline-primary text-color btn-lg px-4">
+                  Assinar Agora
+                </a>
+  
+                <a href="dashboard.html" class="btn btn-primary bg-blue border-0 btn-lg px-4 shadow-sm">
+                  Conhecer a Plataforma
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
