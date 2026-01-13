@@ -8,29 +8,34 @@
 /* VARIÁVEIS DE CORES */
 
 :root {
-  --primary-bg-blue-dark: #000814;
-  --secondary-bg-blue: #001D3D;
+  --primary-dark-blue: #000814;
   --primary-blue-color: #003566;
+  --secondary-blue-color: #001D3D;
   --primary-yellow-color: #FFC300;
   --secondary-yellow-color: #FFD60A;
-  --text-color: #faf8f0;
-  --bg-gradient: linear-gradient(135deg, var(--primary-bg-blue-dark) 0%, var(--secondary-bg-blue) 15%, var(--primary-blue-color) 55%, var(--primary-bg-blue-dark) 100%);
+  --off-white-color: #f8f5e7;
+  --bg-gradient: linear-gradient(50deg, var(--primary-dark-blue) 0%, var(--primary-blue-color) 55%, var(--primary-dark-blue) 100%);
+  
 }
 
+/* CLASSES DE CORES */
+.bg-primary-dark-blue {
+  background-color: var(--primary-dark-blue);
+}
+
+.bg-secondary-blue-color {
+  background-color: var(--secondary-blue-color);
+}
 
 .blue-dark-color {
-  color: var(--primary-bg-blue-dark)
-}
-
-.bg-blue {
-  background-color: var(--secondary-bg-blue)
+  color: var(--secondary-blue-color);
 }
 
 .blue-color {
   color: var(--primary-blue-color);
 }
 
-.btn-yellow {
+.bg-yellow {
   background-color: var(--secondary-yellow-color);
 }
 
@@ -38,8 +43,12 @@
   color: var(--primary-yellow-color);
 }
 
+.bg-off-white {
+  background-color: var(--off-white-color);
+}
+
 .text-color {
-  color: var(--text-color);
+  color: var(--off-white-color);
 }
 
 
@@ -48,7 +57,7 @@
 body {
   font-family: "Lato", sans-serif;
   font-style: normal;
-  color: var(--text-color);
+  color: var(--off-white-color);
   background: var(--bg-gradient) no-repeat;
   min-height: 100vh;
 }
@@ -89,24 +98,190 @@ body {
 
 .hero-section .d-flex a {
   font-size: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 
-/* Animação de flutuação para a imagem */
-@keyframes float {
-  0% {
-    transform: translateY(0px);
+.hero-section .d-flex a:hover {
+  transform: translateY(-10px);
+  transition: transform 0.5s ease;
+}
+
+
+@media(max-width: 425px) {
+  .hero-section {
+    text-align: center;
+     padding: 0 1rem;
+  }
+  .hero-section h2 {
+    font-size: 2.4rem;
   }
 
-  50% {
-    transform: translateY(-10px);
+  .hero-section p {
+    font-size: 1rem;
   }
 
-  100% {
-    transform: translateY(0px);
+  .hero-section .d-flex a {
+    font-size: 1.2rem;
+    padding: 0;
+  }
+
+
+}
+
+/* SECTION CONTENT */
+
+/* Trilhas */
+#trilhas {
+  padding: 32px 0;
+}
+
+.section-content h3 {
+  font-size: 2.4rem;
+}
+
+.slider-window .card {
+  border: 1px solid var(--primary-blue-color);
+  
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+} 
+
+.slider-item .card:hover {
+  transform: translateY(-10px);
+  
+  transition: transform 0.5s ease;
+}
+
+.slider-item .card a {
+ 
+  background-color: var(--primary-blue-color);
+  font-weight: bold;
+}
+
+.slider-item .card a:hover {
+  background-color: var(--secondary-blue-color);
+}
+
+/* --- Estilo dos Itens do Slider --- */
+/* Mobile (Padrão): 1 Card por vez (100% largura) */
+.slider-item {
+  flex: 0 0 100%; 
+  max-width: 100%;
+}
+
+/* Tablet: 2 Cards por vez (50% largura) */
+@media (min-width: 768px) {
+    .slider-item {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+}
+
+/* Desktop: 4 Cards por vez (25% largura) */
+@media (min-width: 992px) {
+  .slider-item {
+    flex: 0 0 25%;
+    max-width: 25%;
   }
 }
 
-.animation-float {
-  animation: float 4s ease-in-out infinite;
+/* --- Lógica de Animação do Slider (Desktop) --- */
+.slider-track {
+  transition: transform 0.5s ease-in-out;
 }
+
+/* Apenas no Desktop foi aplicada a lógica de "2 em 2" */
+@media (min-width: 992px) {
+    #slide-1:checked ~ .slider-window .slider-track {
+      transform: translateX(0%);
+    }
+
+    #slide-2:checked ~ .slider-window .slider-track {
+      transform: translateX(-50%);
+    }
+
+    #slide-3:checked ~ .slider-window .slider-track {
+      transform: translateX(-100%);
+    }
+}
+
+/* --- Controle de Exibição das Setas --- */
+.controls-group { display: none; }
+
+/* Exibe botões conforme input checado */
+#slide-1:checked ~ .controls-1,
+#slide-2:checked ~ .controls-2,
+#slide-3:checked ~ .controls-3 {
+    display: block;
+}
+
+/* Estilo das setas */
+.carousel-control {
+  position: absolute;
+
+  top: 50%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  
+  background-color: var(--secondary-bg-blue);
+  color: var(--off-white-color);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+.carousel-control:hover { 
+  background-color: var(--primary-blue-color);
+}
+
+.prev { 
+  left: -20px; 
+}
+
+.next { 
+  right: -20px; 
+}
+
+/* No Mobile deixo scroll horizontal */
+@media (max-width: 991px) {
+    .slider-track {
+        overflow-x: auto;
+        padding-bottom: 1rem;
+    }
+    .carousel-control { display: none !important; } 
+}
+
+/* Comunidade */
+#comunidade .card {
+  background-color: transparent;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+#comunidade .card:hover {
+  
+  transform: translateY(-10px);
+  transition: transform 0.5s ease;
+}
+
+#comunidade .card h2{
+  font-size: 2rem;
+  color: var(--off-white-color);
+}
+
+#comunidade .card i {
+  font-size: 2rem;
+  color: var(--off-white-color);
+}
+
+#comunidade .card p {
+  font-size: 1rem;
+  color: #f8f5e7d0;
+}
+
+
