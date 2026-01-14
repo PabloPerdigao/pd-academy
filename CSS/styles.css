@@ -51,6 +51,10 @@
   color: var(--off-white-color);
 }
 
+.bg-gradient {
+  background: var(--bg-gradient);
+}
+
 
 /*  ESTILIZAÇÃO GERAL */
 
@@ -78,6 +82,7 @@ body {
   .navbar-collapse {
     transition: all 0.3s ease-in-out;
   }
+
 
 }
 
@@ -285,3 +290,62 @@ body {
 }
 
 
+/* --- Tabela Tecnológica Semântica --- */
+
+/* 1. Container Brilhante */
+.glowing-border {
+    background-color: #001220;
+    border: 1px solid rgba(13, 202, 240, 0.3);
+    box-shadow: 0 0 15px rgba(13, 202, 240, 0.15), 
+                inset 0 0 20px rgba(13, 202, 240, 0.05);
+}
+
+/* 2. Resetando a tabela Bootstrap para fundo transparente */
+.custom-tech-table {
+    background-color: transparent !important;
+    --bs-table-bg: transparent; /* Variável do Bootstrap */
+    --bs-table-color: #fff;
+    --bs-table-border-color: rgba(255, 255, 255, 0.1); /* Borda sutil entre linhas */
+}
+
+/* 3. Cabeçalho Destacado */
+.custom-tech-table thead th {
+    background-color: rgba(0, 0, 0, 0.3); /* Um pouco mais escuro */
+    border-bottom: 2px solid rgba(13, 202, 240, 0.5); /* Linha ciano embaixo do header */
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* 4. Linhas Alternadas (Zebra) */
+.custom-tech-table tbody tr:nth-of-type(odd) {
+    background-color: rgba(13, 110, 253, 0.03); /* Azul muito leve */
+}
+
+.custom-tech-table tbody tr:nth-of-type(even) {
+    background-color: transparent;
+}
+
+/* 5. Efeito Hover Neon */
+.custom-tech-table tbody tr:hover td {
+    background-color: rgba(13, 202, 240, 0.1); /* Ciano ao passar o mouse */
+    color: #fff;
+    transition: background-color 0.3s ease;
+    cursor: default; /* Ou pointer se a linha inteira for clicável */
+}
+
+/* 6. Ajustes de Texto e Alinhamento */
+.custom-tech-table td, 
+.custom-tech-table th {
+    white-space: nowrap; /* Evita quebra de linha indesejada em telas médias */
+    border-bottom-width: 1px;
+}
+
+/* No mobile, permitir quebra de linha apenas na descrição do evento para não alargar demais */
+.custom-tech-table td div span {
+    white-space: normal;
+}
+
+/* Remove a borda da última linha para ficar limpo */
+.custom-tech-table tbody tr:last-child td {
+    border-bottom: 0;
+}
