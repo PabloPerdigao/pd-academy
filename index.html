@@ -71,13 +71,13 @@
                 <a class="nav-link" href="#contato">Inscrição</a>
               </li>
               <li class="nav-item btn-cta">
-                <a
-                  class="nav-link btn btn-primary btn-sm ms-lg-2 px-2 rounded-2"
-                  href="#"
+                <label
+                for="modal-toggle"
+                  class="nav-link btn btn-primary btn-sm px-2 rounded-2"
                 >
-                  Assinar
-                  <i class="bi bi-arrow-right-square mx-1"></i>
-                </a>
+                  <i class="bi bi-box-arrow-in-right"></i>
+                  Entrar
+                </label>
               </li>
             </ul>
           </div>
@@ -96,7 +96,7 @@
               <video
                 src="/assets/video-hero.mp4"
                 alt="Estudante utilizando notebook na PD Case"
-                class="w-100 rounded-3 shadow-lg"
+                class="w-100 rounded-3"
                 autoplay
                 muted
                 loop
@@ -112,7 +112,7 @@
               <p class="g-4">
                 A plataforma completa para começar do zero ou se especializar,
                 estudar no seu ritmo e criar projetos práticos que te preparam
-                de verdade para o mercado de.
+                de verdade para o mercado.
               </p>
             </div>
 
@@ -121,7 +121,7 @@
             >
               <div class="d-flex gap-3">
                 <a
-                  href="#trilhas"
+                  href="#pricing"
                   class="btn btn-outline-primary text-color btn-lg px-4"
                 >
                   Assinar Agora
@@ -129,7 +129,7 @@
 
                 <a
                   href="dashboard.html"
-                  class="btn btn-primary bg-secondary-blue-color btn-lg px-4 shadow-sm border-0"
+                  class="btn btn-primary bg-secondary-blue-color btn-lg px-4  border-0"
                 >
                   Conhecer a Plataforma
                 </a>
@@ -140,532 +140,734 @@
       </section>
 
       <!-- Section Content -->
+      <section class="section-content">
+        <!-- Grid cards -->
+        <article id="trilhas" class="py-5 bg-primary-dark-blue">
+          <div class="container container-fluid">
+            <h3 class="text-center fw-bold mb-4">Nossas Trilhas de Formação</h3>
 
-          <!-- Grid cards -->
-          <article id="trilhas" class="py-5 bg-primary-dark-blue">
-            <div class="container container-fluid">
-              <h3 class="text-center fw-bold mb-4">Nossas Trilhas de Formação</h3>
-  
-              <div class="carousel-container position-relative ">
-              <input
-                type="radio"
-                name="slider"
-                id="slide-1"
-                class="d-none"
-                checked
-              />
-              <input type="radio" name="slider" id="slide-2" class="d-none" />
-              <input type="radio" name="slider" id="slide-3" class="d-none" />
-  
-              <div class="slider-window overflow-hidden">
-                <div class="slider-track d-flex flex-nowrap align-items-stretch">
-                  <div class="slider-item">
-                    <div class="card h-100 shadow-sm mx-2 bg-off-white">
-                      <img
-                        src="/assets/images/programacao.png"
-                        class="card-img-top"
-                        alt="Imagem que representa o curso de Programação"
-                      />
-                      <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Programação</h5>
-                        <div class="card-text small mb-2">
-                          <span class="badge bg-secondary">Lógica</span>
-                          <span class="badge bg-secondary">Python</span>
-                          <span class="badge bg-secondary">PHP</span>
-                          <span class="badge bg-secondary">Java</span>
-                          <span class="badge bg-secondary">.NET</span>
-                          <span class="badge bg-secondary">C</span>
-                          <span class="badge bg-secondary">Node JS</span>
-                          <span class="badge bg-secondary">IOT</span>
-                          <span class="badge bg-secondary">Jogos</span>
-                        </div>
-                        <a href="#" class="btn btn-primary mt-auto btn-sm"
-                          >Confira Mais</a
-                        >
+            <div class="carousel-container position-relative ">
+            <input
+              type="radio"
+              name="slider"
+              id="slide-1"
+              class="d-none"
+              checked
+            />
+            <input type="radio" name="slider" id="slide-2" class="d-none" />
+            <input type="radio" name="slider" id="slide-3" class="d-none" />
+
+            <div class="slider-window overflow-hidden">
+              <div class="slider-track d-flex flex-nowrap align-items-stretch">
+                <div class="slider-item">
+                  <div class="card card-item h-100 mx-2 bg-off-white">
+                    <img
+                      src="/assets/images/programacao.png"
+                      class="card-img-top"
+                      alt="Imagem que representa o curso de Programação"
+                    />
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title">Programação</h5>
+                      <div class="card-text small mb-2">
+                        <span class="badge bg-secondary">Lógica</span>
+                        <span class="badge bg-secondary">Python</span>
+                        <span class="badge bg-secondary">PHP</span>
+                        <span class="badge bg-secondary">Java</span>
+                        <span class="badge bg-secondary">.NET</span>
+                        <span class="badge bg-secondary">C</span>
+                        <span class="badge bg-secondary">Node JS</span>
+                        <span class="badge bg-secondary">IOT</span>
+                        <span class="badge bg-secondary">Jogos</span>
                       </div>
-                    </div>
-                  </div>
-  
-                  <div class="slider-item">
-                    <div class="card h-100 shadow-sm mx-2 bg-off-white">
-                      <span
-                        class="badge bg-success position-absolute top-0 end-0 m-3"
-                        >Em Alta</span
+                      <a href="#" class="btn btn-primary mt-auto btn-sm"
+                        >Veja Mais</a
                       >
-                      <img
-                        src="/assets/images/frontend.png"
-                        class="card-img-top"
-                        alt="Imagem que representa o curso de Front-end"
-                      />
-                      <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">1. Front-end</h5>
-                        <div class="card-text small mb-2">
-                          <span class="badge bg-secondary">HTML</span>
-                          <span class="badge bg-secondary">CSS</span>
-                          <span class="badge bg-secondary">Bootstrap</span>
-                          <span class="badge bg-secondary">React</span>
-                          <span class="badge bg-secondary">Angular</span>
-                          <span class="badge bg-secondary">JavaScript</span>
-                        </div>
-                        <a href="#" class="btn btn-primary mt-auto btn-sm"
-                          >Veja Mais</a
-                        >
-                      </div>
                     </div>
                   </div>
-  
-                  <div class="slider-item">
-                    <div class="card h-100 shadow-sm mx-2 bg-off-white">
-                      <img
-                        src="/assets/images/dados.png"
-                        class="card-img-top"
-                        alt="Imagem que representa o curso de Data Science"
-                      />
-                      <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Data Science</h5>
-                        <div class="card-text small mb-2">
-                          <span class="badge bg-secondary">Ciência de dados</span>
-                          <span class="badge bg-secondary">BI</span>
-                          <span class="badge bg-secondary">SQL</span>
-                          <span class="badge bg-secondary">No SQL</span>
-                          <span class="badge bg-secondary">Machine Learning</span>
-                          <span class="badge bg-secondary">Excel</span>
-                          <span class="badge bg-secondary">Estatística</span>
-                        </div>
-                        <a href="#" class="btn btn-primary mt-auto btn-sm"
-                          >Veja Mais</a
-                        >
+                </div>
+
+                <div class="slider-item">
+                  <div class="card card-item h-100 shadow mx-2 bg-off-white">
+                    <span
+                      class="badge bg-success position-absolute top-0 end-0 m-3"
+                      >Em Alta</span
+                    >
+                    <img
+                      src="/assets/images/frontend.png"
+                      class="card-img-top"
+                      alt="Imagem que representa o curso de Front-end"
+                    />
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title">Front-end</h5>
+                      <div class="card-text small mb-2">
+                        <span class="badge bg-secondary">HTML</span>
+                        <span class="badge bg-secondary">CSS</span>
+                        <span class="badge bg-secondary">Bootstrap</span>
+                        <span class="badge bg-secondary">React</span>
+                        <span class="badge bg-secondary">Angular</span>
+                        <span class="badge bg-secondary">JavaScript</span>
                       </div>
-                    </div>
-                  </div>
-  
-                  <div class="slider-item">
-                    <div class="card h-100 shadow-sm mx-2 bg-off-white">
-                      <span
-                        class="badge bg-yellow blue-dark-color position-absolute top-0 end-0 m-3"
-                        >Novo</span
+                      <a href="#" class="btn btn-primary mt-auto btn-sm"
+                        >Veja Mais</a
                       >
-                      <img
-                        src="/assets/images/ia.png"
-                        class="card-img-top"
-                        alt="Imagem que representa o curso de Inteligencia Artificial"
-                      />
-                      <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Inteligencia Artificial</h5>
-                        <div class="card-text small mb-2">
-                          <span class="badge bg-secondary">IA para Devs</span>
-                          <span class="badge bg-secondary">IA para Dados</span>
-                          <span class="badge bg-secondary">IA para Business</span>
-                        </div>
-                        <a href="#" class="btn btn-primary mt-auto btn-sm"
-                          >Veja Mais</a
-                        >
-                      </div>
                     </div>
                   </div>
-  
-                  <div class="slider-item">
-                    <div class="card h-100 shadow-sm mx-2 bg-off-white">
-                      <span
-                        class="badge bg-warning text-dark position-absolute top-0 end-0 m-3"
-                        >Novo</span
+                </div>
+
+                <div class="slider-item">
+                  <div class="card card-item h-100  mx-2 bg-off-white">
+                    <img
+                      src="/assets/images/dados.png"
+                      class="card-img-top"
+                      alt="Imagem que representa o curso de Data Science"
+                    />
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title">Data Science</h5>
+                      <div class="card-text small mb-2">
+                        <span class="badge bg-secondary">Ciência de dados</span>
+                        <span class="badge bg-secondary">BI</span>
+                        <span class="badge bg-secondary">SQL</span>
+                        <span class="badge bg-secondary">No SQL</span>
+                        <span class="badge bg-secondary">Machine Learning</span>
+                        <span class="badge bg-secondary">Excel</span>
+                        <span class="badge bg-secondary">Estatística</span>
+                      </div>
+                      <a href="#" class="btn btn-primary mt-auto btn-sm"
+                        >Veja Mais</a
                       >
-                      <img
-                        src="/assets/images/devops.png"
-                        class="card-img-top"
-                        alt="Imagem que representa o curso de DevOps"
-                      />
-                      <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">DevOps</h5>
-                        <div class="card-text small mb-2">
-                          <span class="badge bg-secondary">AWS</span>
-                          <span class="badge bg-secondary">Azure</span>
-                          <span class="badge bg-secondary">Docker</span>
-                          <span class="badge bg-secondary">Segurança</span>
-                          <span class="badge bg-secondary">IaC</span>
-                          <span class="badge bg-secondary">Linux</span>
-                        </div>
-                        <a href="#" class="btn btn-primary mt-auto btn-sm"
-                          >Veja Mais</a
-                        >
-                      </div>
                     </div>
                   </div>
-  
-                  <div class="slider-item">
-                    <div class="card h-100 shadow-sm mx-2 bg-off-white">
-                      <img
-                        src="/assets/images/design.png"
-                        class="card-img-top"
-                        alt="Imagem que representa o curso  de UX & Design"
-                      />
-                      <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">UX & Design</h5>
-                        <div class="card-text small mb-2">
-                          <span class="badge bg-secondary">Usabilidade e UX</span>
-                          <span class="badge bg-secondary">Video e Motion</span>
-                          <span class="badge bg-secondary">3D</span>
-                          <span class="badge bg-secondary">Figma</span>
-                          <span class="badge bg-secondary">Photoshop</span>
-                          <span class="badge bg-secondary">Illustrator</span>
-                        </div>
-                        <a href="#" class="btn btn-primary mt-auto btn-sm"
-                          >Ver Mais</a
-                        >
+                </div>
+
+                <div class="slider-item">
+                  <div class="card card-item h-100  mx-2 bg-off-white">
+                    <span
+                      class="badge bg-yellow blue-dark-color position-absolute top-0 end-0 m-3"
+                      >Novo</span
+                    >
+                    <img
+                      src="/assets/images/ia.png"
+                      class="card-img-top"
+                      alt="Imagem que representa o curso de Inteligencia Artificial"
+                    />
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title">Inteligencia Artificial</h5>
+                      <div class="card-text small mb-2">
+                        <span class="badge bg-secondary">IA para Devs</span>
+                        <span class="badge bg-secondary">IA para Dados</span>
+                        <span class="badge bg-secondary">IA para Business</span>
                       </div>
+                      <a href="#" class="btn btn-primary mt-auto btn-sm"
+                        >Veja Mais</a
+                      >
                     </div>
                   </div>
-  
-                  <div class="slider-item">
-                    <div class="card h-100 shadow-sm mx-2 bg-off-white">
-                      <img
-                        src="/assets/images/agil.png"
-                        class="card-img-top"
-                        alt="Imagem que representa o curso de Inovação & Gestão"
-                      />
-                      <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Inovação & Gestão</h5>
-                        <div class="card-text small mb-2">
-                          <span class="badge bg-secondary">Métodos Ágeis</span>
-                          <span class="badge bg-secondary">Softskills</span>
-                          <span class="badge bg-secondary"
-                            >Liderança e Gestão</span
-                          >
-                          <span class="badge bg-secondary">Startups</span>
-                          <span class="badge bg-secondary">Vendas</span>
-                        </div>
-                        <a href="#" class="btn btn-primary mt-auto btn-sm"
-                          >Confira Mais</a
-                        >
+                </div>
+
+                <div class="slider-item">
+                  <div class="card card-item h-100  mx-2 bg-off-white">
+                    <span
+                      class="badge bg-warning text-dark position-absolute top-0 end-0 m-3"
+                      >Novo</span
+                    >
+                    <img
+                      src="/assets/images/devops.png"
+                      class="card-img-top"
+                      alt="Imagem que representa o curso de DevOps"
+                    />
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title">DevOps</h5>
+                      <div class="card-text small mb-2">
+                        <span class="badge bg-secondary">AWS</span>
+                        <span class="badge bg-secondary">Azure</span>
+                        <span class="badge bg-secondary">Docker</span>
+                        <span class="badge bg-secondary">Segurança</span>
+                        <span class="badge bg-secondary">IaC</span>
+                        <span class="badge bg-secondary">Linux</span>
                       </div>
+                      <a href="#" class="btn btn-primary mt-auto btn-sm"
+                        >Veja Mais</a
+                      >
                     </div>
                   </div>
-  
-                  <div class="slider-item">
-                    <div class="card h-100 shadow-sm mx-2 bg-off-white">
-                      <img
-                        src="/assets/images/mobile.png"
-                        class="card-img-top"
-                        alt="Imagem que representa o curso de Mobile"
-                      />
-                      <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Mobile</h5>
-                        <div class="card-text small mb-2">
-                          <span class="badge bg-secondary">Android</span>
-                          <span class="badge bg-secondary">Kotlin</span>
-                          <span class="badge bg-secondary">Flutter</span>
-                          <span class="badge bg-secondary">iOS</span>
-                          <span class="badge bg-secondary">Swift</span>
-                          <span class="badge bg-secondary">Jogos</span>
-                        </div>
-                        <a href="#" class="btn btn-primary mt-auto btn-sm"
-                          >Confira Mais</a
-                        >
+                </div>
+
+                <div class="slider-item">
+                  <div class="card card-item h-100  mx-2 bg-off-white">
+                    <img
+                      src="/assets/images/design.png"
+                      class="card-img-top"
+                      alt="Imagem que representa o curso  de UX & Design"
+                    />
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title">UX & Design</h5>
+                      <div class="card-text small mb-2">
+                        <span class="badge bg-secondary">Usabilidade e UX</span>
+                        <span class="badge bg-secondary">Video e Motion</span>
+                        <span class="badge bg-secondary">3D</span>
+                        <span class="badge bg-secondary">Figma</span>
+                        <span class="badge bg-secondary">Photoshop</span>
+                        <span class="badge bg-secondary">Illustrator</span>
                       </div>
+                      <a href="#" class="btn btn-primary mt-auto btn-sm"
+                        >Ver Mais</a
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="slider-item">
+                  <div class="card card-item h-100  mx-2 bg-off-white">
+                    <img
+                      src="/assets/images/agil.png"
+                      class="card-img-top"
+                      alt="Imagem que representa o curso de Inovação & Gestão"
+                    />
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title">Inovação & Gestão</h5>
+                      <div class="card-text small mb-2">
+                        <span class="badge bg-secondary">Métodos Ágeis</span>
+                        <span class="badge bg-secondary">Softskills</span>
+                        <span class="badge bg-secondary"
+                          >Liderança e Gestão</span
+                        >
+                        <span class="badge bg-secondary">Startups</span>
+                        <span class="badge bg-secondary">Vendas</span>
+                      </div>
+                      <a href="#" class="btn btn-primary mt-auto btn-sm"
+                        >Veja Mais</a
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="slider-item">
+                  <div class="card card-item h-100  mx-2 bg-off-white">
+                    <img
+                      src="/assets/images/mobile.png"
+                      class="card-img-top"
+                      alt="Imagem que representa o curso de Mobile"
+                    />
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title">Mobile</h5>
+                      <div class="card-text small mb-2">
+                        <span class="badge bg-secondary">Android</span>
+                        <span class="badge bg-secondary">Kotlin</span>
+                        <span class="badge bg-secondary">Flutter</span>
+                        <span class="badge bg-secondary">iOS</span>
+                        <span class="badge bg-secondary">Swift</span>
+                        <span class="badge bg-secondary">Jogos</span>
+                      </div>
+                      <a href="#" class="btn btn-primary mt-auto btn-sm"
+                        >Veja Mais</a
+                      >
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="controls-group controls-1">
-                <label for="slide-2" class="carousel-control next"
-                  ><i class="bi bi-chevron-right"></i
-                ></label>
-              </div>
-  
-              <div class="controls-group controls-2">
-                <label for="slide-1" class="carousel-control prev"
-                  ><i class="bi bi-chevron-left"></i
-                ></label>
-                <label for="slide-3" class="carousel-control next"
-                  ><i class="bi bi-chevron-right"></i
-                ></label>
-              </div>
-  
-              <div class="controls-group controls-3">
-                <label for="slide-2" class="carousel-control prev"
-                  ><i class="bi bi-chevron-left"></i
-                ></label>
-              </div>
             </div>
+            <div class="controls-group controls-1">
+              <label for="slide-2" class="carousel-control next"
+                ><i class="bi bi-chevron-right"></i
+              ></label>
             </div>
-          </article>
-          
 
-          <!-- Tabela Eventos -->
-          <article id="tabela-eventos" class="py-5">
-            <div class="container">
+            <div class="controls-group controls-2">
+              <label for="slide-1" class="carousel-control prev"
+                ><i class="bi bi-chevron-left"></i
+              ></label>
+              <label for="slide-3" class="carousel-control next"
+                ><i class="bi bi-chevron-right"></i
+              ></label>
+            </div>
 
-              <div class="text-center text-white mb-5">
-                <h2 class="fw-bold">
-                  Veja o que vem por aí
-                </h2>
-                <p class="lead text-light opacity-75">Descubra as novidades da PD Academy</p>
-              </div>
+            <div class="controls-group controls-3">
+              <label for="slide-2" class="carousel-control prev"
+                ><i class="bi bi-chevron-left"></i
+              ></label>
+            </div>
+          </div>
+          </div>
+        </article>
+        
 
-              <div class="table-responsive glowing-border p-3 p-md-4 rounded-3">
+        <!-- Tabela Eventos -->
+        <article id="tabela-eventos" class="py-5">
+          <div class="container">
 
-                <table
-                  class="table table-dark table-hover align-middle mb-0 custom-tech-table"
-                >
-                  <thead>
-                    <tr class="text-info text-uppercase small">
-                      <th scope="col" class="py-3 ps-4">Data</th>
-                      <th scope="col" class="py-3">Eventos</th>
-                      <th scope="col" class="py-3 text- pe-4 ">Status</th>
-                    </tr>
-                  </thead>
+            <div class="text-center text-white mb-5">
+              <h2 class="fw-bold">
+                Veja o que vem por aí
+              </h2>
+              <p class="lead text-color opacity-75">Descubra as novidades da PD Academy</p>
+            </div>
 
-                  <tbody>
-                    <tr>
-                      <td class="ps-4">
-                        <div class="d-flex align-items-center">
-                          <div class="text-center lh-1 me-2">
-                            <span class="d-block fs-4 fw-bold text-warning"
-                              >15</span
-                            >
-                            <small
-                              class="text-uppercase fw-bold text-color"
-                              style="font-size: 0.7rem"
-                              >JAN</small
-                            >
-                          </div>
-                        </div>
-                      </td>
+            <div class="table-responsive glowing-border p-3 p-md-4 rounded-3">
 
-                      <td>
-                        <div class="d-flex justify-content-start align-items-center gap-5">
+              <table
+                class="table table-dark table-hover align-middle mb-0 custom-tech-table"
+              >
+                <thead>
+                  <tr class="text-info text-uppercase small">
+                    <th scope="col" class="py-3 ps-4">Data</th>
+                    <th scope="col" class="py-3">Eventos</th>
+                    <th scope="col" class="py-3 text- pe-4 ">Status</th>
+                  </tr>
+                </thead>
 
-                          <div class="d-flex align-items-center">
-                            <div
-                              class="rounded-3 me-3 border border-secondary text-center fs-4 d-flex justify-content-center align-items-center bg-dark text-info"
-                              style="width: 50px; height: 50px;">
-                              <i class="bi bi-code-slash"></i>
-                            </div>
-                          
-                            <div>
-                              <span class="d-block fw-bold text-white"
-                                >Imersão de Bootstrap</span
-                              >
-                              <small class="text-color">Do zero ao avançado</small>
-                            </div>
-                          </div>
-                          <span
-                          class="badge border border-success text-success rounded-pill px-3 py-2 d-none d-lg-inline-block"
-                          >Gratuita</span>
-                        </div>
-                      </td>
-
-                      <td class="text-center pe-4">
-                          <button
-                            class="btn btn-sm btn-success rounded-pill px-3 text-nowrap"
+                <tbody>
+                  <tr>
+                    <td class="ps-4">
+                      <div class="d-flex align-items-center">
+                        <div class="text-center lh-1 me-2">
+                          <span class="d-block fs-4 fw-bold text-warning"
+                            >15</span
                           >
-                            Inscreva-se
-                          </button>
-                      </td>
-                    </tr>
-
-                    <tr>
-                      <td class="ps-4">
-                        <div class="d-flex align-items-center">
-                          <div class="text-center lh-1 me-2">
-                            <span class="d-block fs-4 fw-bold text-warning"
-                              >22</span
-                            >
-                            <small
-                              class="text-uppercase fw-bold text-color"
-                              style="font-size: 0.7rem"
-                              >FEV</small
-                            >
-                          </div>
+                          <small
+                            class="text-uppercase fw-bold text-color"
+                            style="font-size: 0.7rem"
+                            >JAN</small
+                          >
                         </div>
-                      </td>
+                      </div>
+                    </td>
 
-                      <td>
-                        <div class="d-flex justify-content-start align-items-center gap-5">
+                    <td>
+                      <div class="d-flex justify-content-start align-items-center gap-5">
 
-
-                          <div class="d-flex align-items-center">
-                            <div
-                              class="rounded-3 me-3 border border-secondary text-center fs-4 d-flex justify-content-center align-items-center bg-dark text-info"
-                              style="width: 50px; height: 50px;">
-                              <i class="bi bi-mic"></i>
-                            </div>
+                        <div class="d-flex align-items-center">
+                          <div
+                            class="rounded-3 me-3 border border-secondary text-center fs-4 d-flex justify-content-center align-items-center text-info"
+                            style="width: 50px; height: 50px;">
+                            <i class="bi bi-code-slash"></i>
+                          </div>
                         
-                            <div>
-                              <span class="d-block fw-bold text-white"
-                                >Workshop: IA na Prática</span
-                              >
-                              <small class="text-color">Live no Youtube</small>
-                            </div>
-                          </div>
-      
-                          <span
-                            class="badge border border-warning text-warning rounded-pill px-3 py-2 d-none d-lg-inline-block"
-                            >próximo evento
-                          </span>
-                        </div>
-
-                      </td>
-                      <td class="text-center pe-4">
-                          <button
-                            class="btn btn-sm btn-warning fw-bold rounded-pill px-3 text-nowrap"
-                          >
-                            Inscreva-se
-                          </button>
-                      </td>
-                    </tr>
-
-                    <tr>
-                      <td class="ps-4">
-                        <div class="d-flex align-items-center">
-                          <div class="text-center lh-1 me-2">
-                            <span class="d-block fs-4 fw-bold text-warning"
-                              >01</span
+                          <div>
+                            <span class="d-block fw-bold text-white"
+                              >Imersão de Bootstrap</span
                             >
-                            <small
-                              class="text-uppercase fw-bold text-color"
-                              style="font-size: 0.7rem"
-                              >MAR</small
-                            >
-                          </div>
-                        </div>
-                      </td>
-
-
-                      <td>
-                        <div class="d-flex justify-content-start align-items-center gap-5">
-
-                          <div class="d-flex align-items-center">
-                            <div
-                              class="rounded-3 me-3 border border-secondary text-center fs-4 d-flex justify-content-center align-items-center bg-dark text-info"
-                              style="width: 50px; height: 50px;">
-                              <i class="bi bi-mortarboard"></i>
-                            </div>
                             
-                            <div>
-                              <span class="d-block fw-bold text-white"
-                                >Mentoria de Carreira </span
-                              >
-                              <small class="text-color">Inscrições abertas!</small>
-                            </div>
+                              <small>Do zero ao avançado</small>
+                            
                           </div>
+                        </div>
+                        <span
+                        class="badge border border-success text-success rounded-pill px-3 py-2 d-none d-lg-inline-block"
+                        >Gratuita</span>
+                      </div>
+                    </td>
 
-                          <span
-                            class="badge border border-primary text-primary rounded-pill px-3 py-2 d-none d-lg-inline-block"
-                            >Assinantes
-                          </span>
+                    <td class="text-center pe-4">
+                        <label
+                          for="modal-toggle"
+                          class="btn btn-sm btn-success rounded-pill px-3 text-nowrap"
+                        >
+                          Inscreva-se
+                        </label>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td class="ps-4">
+                      <div class="d-flex align-items-center">
+                        <div class="text-center lh-1 me-2">
+                          <span class="d-block fs-4 fw-bold text-warning"
+                            >22</span
+                          >
+                          <small
+                            class="text-uppercase fw-bold text-color"
+                            style="font-size: 0.7rem"
+                            >FEV</small
+                          >
+                        </div>
+                      </div>
+                    </td>
+
+                    <td>
+                      <div class="d-flex justify-content-start align-items-center gap-5">
+
+
+                        <div class="d-flex align-items-center">
+                          <div
+                            class="rounded-3 me-3 border border-secondary text-center fs-4 d-flex justify-content-center align-items-center text-info"
+                            style="width: 50px; height: 50px;">
+                            <i class="bi bi-mic"></i>
+                          </div>
+                      
+                          <div>
+                            <span class="d-block fw-bold text-white"
+                              >Workshop: IA na Prática</span
+                            >
+                            
+                              <small>Live no Youtube</small>
+                                                   
+                          </div>
+                        </div>
+    
+                        <span
+                          class="badge border border-warning text-warning rounded-pill px-3 py-2 d-none d-lg-inline-block"
+                          >próximo evento
+                        </span>
+                      </div>
+
+                    </td>
+                    <td class="text-center pe-4">
+                        <label
+                          for="modal-toggle"
+                          class="btn btn-sm btn-warning fw-bold rounded-pill px-3 text-nowrap"
+                        >
+                          Inscreva-se
+                        </label>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td class="ps-4">
+                      <div class="d-flex align-items-center">
+                        <div class="text-center lh-1 me-2">
+                          <span class="d-block fs-4 fw-bold text-warning"
+                            >01</span
+                          >
+                          <small
+                            class="text-uppercase fw-bold text-color"
+                            style="font-size: 0.7rem"
+                            >MAR</small
+                          >
+                        </div>
+                      </div>
+                    </td>
+
+
+                    <td>
+                      <div class="d-flex justify-content-start align-items-center gap-5">
+
+                        <div class="d-flex align-items-center">
+                          <div
+                            class="rounded-3 me-3 border border-secondary text-center fs-4 d-flex justify-content-center align-items-center text-info"
+                            style="width: 50px; height: 50px;">
+                            <i class="bi bi-mortarboard"></i>
+                          </div>
+                          
+                          <div>
+                            <span class="d-block fw-bold text-white"
+                              >Mentoria de Carreira </span
+                            >
+                                            
+                            
+                              <small>Inscrições abertas!</small>
+                            
+                          </div>
                         </div>
 
-                      </td>
+                        <span
+                          class="badge border border-primary text-primary rounded-pill px-3 py-2 d-none d-lg-inline-block"
+                          >Assinantes
+                        </span>
+                      </div>
 
-                      <td class="text-center pe-4">
-                        <button
-                          class="btn btn-sm btn-secondary rounded-pill px-3 text-nowrap" disabled>
-                          Em breve
-                        </button>
-                      </td>
+                    </td>
 
-                    </tr>
+                    <td class="text-center pe-4">
+                      <label for="modal-toggle"
+                        class="btn btn-sm btn-secondary rounded-pill px-3 text-nowrap" disabled>
+                        Em breve
+                      </label>
+                    </td>
 
-                  </tbody>
-                </table>
-              </di>
+                  </tr>
+
+                </tbody>
+              </table>
+            </di>
+          </div>
+        </article>
+
+        <!-- Cards Comunidade -->
+        <article id="secao-comunidade" class="bg-primary-dark-blue py-5">
+          <div class="container container-fluid">
+            <div class="text-center mb-4">
+              <h3 class="fw-bold">Nossa Comunidade em Números</h3>
+              <p class="lead  opacity-75">
+                Faça parte doe nosso ecossistema tech que mais cresce na América Latina.
+              </p>
             </div>
-          </article>
 
-          <!-- Cards Comunidade -->
-          <article id="secao-comunidade" class="bg-primary-dark-blue py-5">
-            <div class="container container-fluid">
-              <div class="text-center mb-4">
-                <h3 class="fw-bold">Nossa Comunidade em Números</h3>
-                <p class="lead text-light opacity-75">
-                  Faça parte doe nosso ecossistema tech que mais cresce na América Latina.
-                </p>
-              </div>
+            <div class="row g-4" id="comunidade">
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="card h-100  hover-up">
+                  <div
+                    class="card-body d-flex flex-column align-items-center text-center"
+                  >
+                    <i class="bi bi-lightning-charge text-warning mb-3"></i>
 
-              <div class="row g-4" id="comunidade">
-                <div class="col-12 col-md-6 col-lg-3">
-                  <div class="card h-100 shadow-sm hover-up">
-                    <div
-                      class="card-body d-flex flex-column align-items-center text-center"
+                    <h2 class="fw-bold display-6 mb-0">+1M</h2>
+                    <small class="text-color fw-bold text-uppercase mb-3"
+                      >De Devs</small
                     >
-                      <i class="bi bi-lightning-charge text-warning mb-3"></i>
 
-                      <h2 class="fw-bold display-6 mb-0">+1M</h2>
-                      <small class="text-color fw-bold text-uppercase mb-3"
-                        >De Devs</small
-                      >
-
-                      <p class="card-text">
-                        Impactados por eventos e conteúdos gratuitos.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-3">
-                  <div class="card h-100 shadow-sm hover-up">
-                    <div
-                      class="card-body d-flex flex-column align-items-center text-center"
-                    >
-                      <i
-                        class="bi bi-person-badge-fill display-4 text-primary mb-3"
-                      ></i>
-
-                      <h2 class="fw-bold display-6 mb-0">+600k</h2>
-                      <small class="text-color fw-bold text-uppercase mb-3"
-                        >Assinantes</small
-                      >
-
-                      <p class="card-text">
-                        Devs e parceiros da plataforma PD Academy
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-3">
-                  <div class="card h-100 shadow-sm hover-up">
-                    <div
-                      class="card-body d-flex flex-column align-items-center text-center"
-                    >
-                      <i
-                        class="bi bi-discord display-4 text-primary mb-3"
-                        style="color: #5865f2 !important"
-                      ></i>
-
-                      <h2 class="fw-bold display-6 mb-0">+220k</h2>
-                      <small class="text-color fw-bold text-uppercase mb-3"
-                        >Online Agora</small
-                      >
-
-                      <p class="card-text">Devs na comunidade aberta no Discord</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-3">
-                  <div class="card h-100 shadow-sm hover-up">
-                    <div
-                      class="card-body d-flex flex-column align-items-center text-center"
-                    >
-                      <i class="bi bi-youtube display-4 text-danger mb-3"></i>
-
-                      <h2 class="fw-bold display-6 mb-0">+320k</h2>
-                      <small class="text-color fw-bold text-uppercase mb-3"
-                        >Inscritos</small
-                      >
-
-                      <p class="card-text">Inscritos no canal do YouTube</p>
-                    </div>
+                    <p class="card-text">
+                      Impactados por eventos e conteúdos gratuitos.
+                    </p>
                   </div>
                 </div>
               </div>
 
-            </div>
-          </article>
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="card h-100  hover-up">
+                  <div
+                    class="card-body d-flex flex-column align-items-center text-center"
+                  >
+                    <i
+                      class="bi bi-person-badge-fill display-4 text-primary mb-3"
+                    ></i>
 
-      
+                    <h2 class="fw-bold display-6 mb-0">+600k</h2>
+                    <small class="text-color fw-bold text-uppercase mb-3"
+                      >Assinantes</small
+                    >
+
+                    <p class="card-text">
+                      Devs e parceiros da plataforma PD Academy
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="card h-100  hover-up">
+                  <div
+                    class="card-body d-flex flex-column align-items-center text-center"
+                  >
+                    <i
+                      class="bi bi-discord display-4 text-primary mb-3"
+                      style="color: #5865f2 !important"
+                    ></i>
+
+                    <h2 class="fw-bold display-6 mb-0">+220k</h2>
+                    <small class="text-color fw-bold text-uppercase mb-3"
+                      >Online Agora</small
+                    >
+
+                    <p class="card-text">Devs na comunidade aberta no Discord</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="card h-100  hover-up">
+                  <div
+                    class="card-body d-flex flex-column align-items-center text-center"
+                  >
+                    <i class="bi bi-youtube display-4 text-danger mb-3"></i>
+
+                    <h2 class="fw-bold display-6 mb-0">+320k</h2>
+                    <small class="text-color fw-bold text-uppercase mb-3"
+                      >Inscritos</small
+                    >
+
+                    <p class="card-text">Inscritos no canal do YouTube</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </article>
+      </section>
     </main>
+
+    <footer class="text-color pt-3 pb-2 mt-5">
+      <div class="container">
+        <div class="row justify-content-between">
+            
+          <div class="col-lg-5 mb-5 mb-lg-0">
+            <h3 class="fw-bold mb-3">
+              <img
+              src="/assets/images/logo-pd-academy.png"
+              alt="PD Academy Logo"
+              width="180"
+              height="50"
+            />
+            </h3>
+
+            <p>Transformando estagiários em talentos de alta performance. Acompanhe nossas redes e fique por dentro das novidades.</p>
+
+            <div class="d-flex gap-3 fs-4 mt-4">
+              <a href="#" class="text-color hover-info"><i class="bi bi-linkedin"></i></a>
+              <a href="#" class="text-color hover-info"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="text-color hover-info"><i class="bi bi-youtube"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <h5 class="fw-bold mb-1">Fale Conosco</h5>
+            <p class="fs-6">Preencha o formulário de contato abaixo.</p>
+              
+            <form>
+              <div class="row g-3">
+                  
+                <div class="col-md-6">
+                  <label for="name">Nome</label>
+                  <input type="text" class="form-control bg-primary-dark-blue border-0 text-secondary-color " placeholder="Seu Nome" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="surname">Sobrenome</label>
+                  <input type="text" class="form-control bg-primary-dark-blue border-0 text-secondary-color " placeholder="Seu Sobrenome" required>
+                </div>
+
+                <div class="col-12">
+                  <label for="email">E-mail</label>
+                  <input type="email" class="form-control bg-primary-dark-blue border-0 text-secondary-color " placeholder="exemplo@email.com" required>
+                </div>
+
+                <div class="col-12">
+                  <label for="message">Mensagem</label>
+                  <textarea class="form-control bg-primary-dark-blue border-0 text-secondary-color " rows="4" placeholder="Sua mensagem..."></textarea>
+                </div>
+
+                <div class="col-12 text-start">
+                  <label for="modal-feedback-toggle" type="submit" class="btn text-color px-5">Enviar</label>
+                </div>
+
+              </div>
+            </form>
+
+          </div>
+
+        </div>
+
+        <hr class="border-2 border-primary mb-4 w-auto" />
+        
+        <div class="text-center text-muted small">
+          <p>
+            &copy; 2024 PD Case - Todos os direitos reservados.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- Modal Feedback -->
+    <input type="checkbox" id="modal-feedback-toggle">
+
+
+    <div class="success-modal">
+      <div class="modal-content">
+
+        <p><i class="bi bi-send-check fs-4"></i></p>
+        <p>Seu feedback foi enviado para nossa equipe.</p>
+        
+        <label for="modal-feedback-toggle" class="close-modal btn btn-primary  rounded-pill px-3 ">Fechar</label>
+      </div>
+      
+    </div>
+   
+
+
+    <!-- Modal de Cadastro -->
+      <input type="checkbox" id="modal-toggle">
+
+      <div class="modal-overlay" tabindex="-1">
+
+        <label for="modal-toggle" class="position-absolute w-100 h-100" style="cursor: default;"></label>
+
+        <div class="modal-content-box p-4 rounded-3 position-relative">
+
+          <div class="modal-header">
+            <button type="button" class="btn-close border-0" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+
+          <div class="modal-body">
+
+            <h3 class="modal-title fw-bold mb-1 text-center">
+              <img
+                src="/assets/images/logo-pd-academy.png"
+                alt="PD Academy Logo"
+                width="180"
+                height="50"
+              />
+            </h3>
+
+            <p class="mb-4 text-center">Garanta sua vaga em nosso ecossistema tech.</p>
+
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Nome Completo</label>
+                <input type="text" class="form-control bg-primary-dark-blue text-secondary-color border-0"
+                required 
+                id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Digite seu nome completo">
+              </div>
+
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Data de Nascimento</label>
+                <input type="date" class="form-control bg-primary-dark-blue border-0 text-secondary-color" 
+                required id="exampleInputEmail1" 
+                aria-describedby="emailHelp">
+              </div>
+
+              <div class="col-12">
+                  <label class="form-label text-color">Qual sua área de foco?</label>
+                  <select class="form-select bg-primary-dark-blue text-secondary-color border-0"
+            >
+                      <option selected>Selecione uma opção...</option>
+                      <option value="1">Desenvolvimento Fullstack</option>
+                      <option value="2">Data Science & IA</option>
+                      <option value="3">DevOps & Cloud</option>
+                      <option value="4">Mobile</option>
+                      <option value="5">UX & Design</option>
+                      <option value="6">Metodologias Ágeis & Liderança</option>
+                  </select>
+              </div>
+
+              <div class="col-12 mt-3">
+                  <label class="form-label text-color d-block">Nível de Senioridade:</label>
+                  <div class="form-check form-check-inline">
+                      <input class="form-check-input bg-primary-dark-blue text-secondary-color border-0" type="radio" name="senioridade" id="jr" value="jr"
+                      >
+                      <label class="form-check-label text-color opacity-75" for="jr">Júnior</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                      <input class="form-check-input bg-primary-dark-blue text-color border-0" type="radio" name="senioridade" id="pl" value="pl">
+                      <label class="form-check-label text-color opacity-75" for="pl">Pleno</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                      <input class="form-check-input bg-primary-dark-blue text-color border-0" type="radio" name="senioridade" id="sr" value="sr">
+                      <label class="form-check-label text-color opacity-75" for="sr">Sênior</label>
+                  </div>
+              </div>
+
+              <div class="mt-3 mb-3">
+                <label for="exampleInputEmail1" class="form-label">E-mail</label>
+                <input type="email" class="form-control bg-primary-dark-blue text-secondary-color border-0" 
+                required id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="exemplo@email.com">
+                <div id="emaiInfo" class="form-text">Nunca compartilharemos seu e-mail com ninguém.</div>
+              </div>
+
+
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Crie uma senha</label>
+                <input type="password" class="form-control bg-primary-dark-blue text-secondary-color border-0 is-valid" required id="exampleInputPassword1" placeholder="senha">
+                <div id="passwordInfo" class="form-text">Sua senha deve conter pelo menos 8 caracteres.</div>
+              </div>
+
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Confirme a senha</label>
+                <input type="password" class="form-control bg-primary-dark-blue text-secondary-color border-0 is-invalid" required id="exampleInputPassword1" placeholder="repita sua senha">
+              </div>
+
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input bg-primary-dark-blue text-secondary-color border-0">
+                <label class="form-check-label"><a href="#" class="text-secondary-color"
+                >Aceito os termos e condições</a></label>
+              </div>
+
+              <div class="col-12 mt-4">
+                  <button type="submit" class="btn btn-primary bg-secondary-blue-color w-100 fw-bold rounded-pill shadow-lg"><a class="text-color" href="dashboard.html">Confirmar Inscrição</a></button>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
   </body>
 </html>
