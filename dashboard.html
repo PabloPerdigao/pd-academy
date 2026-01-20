@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard | PD Academy</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <!-- Booststrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./CSS/styles.css" />
+  </head>
+  <body>
+    <input type="checkbox" id="sidebar-toggle" class="d-none" />
+
+
+    <div class="dashboard-grid">
+      
+
+      <header class="dash-header">
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-sticky-top py-3">
+          <div class="container d-flex flex-wrap gap-3">
+            
+            <div class="d-flex align-items-center gap-3">
+  
+              <label for="sidebar-toggle" class="btn text-color d-lg-none cursor-pointer">
+                  <i class="bi bi-list fs-4"></i>
+              </label>
+                  
+              <div class="d-flex align-items-center gap-2">
+                <h1 class="pd-logo m-0"> <a class="navbar-brand" href="#">
+                    <img
+                      src="/assets/images/logo-pd-academy.png"
+                      alt="PD Academy Logo"
+                      width="180"
+                      height="50"
+                    />
+                  </a>
+                </h1>
+              </div>
+            </div>
+
+            <div class="d-flex flex-grow-1 justify-content-between align-items-center gap-3" id="navbarContent">
+
+              <form class="d-flex flex-grow-1 mx-lg-5 order-0 order-lg-0 w-50" role="search">
+                <input
+                  class="form-control bg-secondary-blue-color text-secondary-color border-0 me-2"
+                  type="search"
+                  placeholder="Faça sua busca aqui"
+                  aria-label="Buscar"
+                />
+    
+                <button class="btn bg-blue-color" type="submit">
+                  <i class="bi bi-search text-secondary-color border-0"></i>
+                </button>
+              </form>
+  
+              <ul class="navbar-nav ms-auto d-flex flex-row align-items-center gap-3 order-1 order-lg-">
+                
+                <li class="nav-item d-none d-lg-block">
+                  <a class="nav-link border border-secondary text-secondary-color rounded-2 py-1 px-2 d-flex align-items-center gap-2" href="#streak" aria-label="Streak" title="Streak">
+                    <i class="bi bi-infinity fw-bold"></i>
+                    <span class="d-none d-sm-inline">3 dias</span> </a>
+                </li>
+  
+                <li class="nav-item">
+                  <button class="btn btn-icon position-relative text-secondary-color" aria-label="Notificações" title="Notificações">
+                    <i class="bi bi-bell fs-4"></i>
+                      <span class="position-absolute top-10 start-60 translate-middle p-1 bg-warning border border-warning rounded-circle"></span>
+                  </button>
+                </li>
+                
+                <div class="dropdown">
+                  <a href="#" class="d-flex align-items-center text-color text-decoration-none dropdown-toggle p-2" aria-expanded="false">
+                      <img src="https://placehold.co/40x40/0daaf0/fff?text=PD" alt="User" class="rounded-circle border border-info">
+                  </a>
+  
+                  <ul class="dropdown-menu bg-primary-dark-blue dropdown-menu-end position-absolute">
+                      <li><a class="dropdown-item text-secondary-color" href="#">Meu Perfil</a></li>
+                      <li><a class="dropdown-item text-secondary-color" href="#">Configurações</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item text-danger" href="index.html">Sair</a></li>
+                  </ul>
+                </div>
+  
+                <li class="nav-item btn-cta d-none d-sm-block"> <a href="/index.html" class="btn btn-sm px-3 rounded-2 text-secondary-color d-flex align-items-center gap-2"> 
+                  <i class="bi bi-box-arrow-right"></i> Sair
+                </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <aside class="dash-sidebar bg-overlay rounded-2" id="mainSidebar">
+              <nav class="nav flex-column p-3 gap-2">
+                
+                  <div class="d-flex justify-content-end d-lg-none">
+                    <label for="sidebar-toggle" class="btn text-color"><i class="bi bi-x-lg"></i></label>
+                  </div>
+
+                  <small class="text-uppercase text-color fw-bold mb-2 mt-2" >Navegação</small>
+                  
+                  <a href="#" class="nav-link active d-flex align-items-center gap-3 rounded-3">
+                      <i class="bi bi-grid-fill"></i> Home
+                  </a>
+  
+                  <small class="text-uppercase text-color fw-bold mb-2 mt-4" style="font-size: 0.75rem;">Progresso</small>
+                  
+                  <a href="#" class="nav-link d-flex align-items-center gap-3 rounded-3 text-secondary-color">
+                      <i class="bi bi-play-circle"></i> Meus Conteúdos
+                  </a>
+                  <a href="#" class="nav-link d-flex align-items-center gap-3 rounded-3 text-secondary-color">
+                      <i class="bi bi-map"></i> Minha Jornada
+                  </a>
+  
+                  <small class="text-uppercase text-color fw-bold mb-2 mt-4" style="font-size: 0.75rem;">Aprendizado</small>
+                  
+                  <a href="#" class="nav-link d-flex align-items-center gap-3 rounded-3 text-secondary-color">
+                      <i class="bi bi-journal-code"></i> Catálogo
+                  </a>
+                  <a href="#" class="nav-link d-flex align-items-center gap-3 rounded-3 text-secondary-color">
+                      <i class="bi bi-rocket-takeoff"></i> Projetos
+                  </a>
+                  <a href="#" class="nav-link d-flex align-items-center gap-3 rounded-3 text-secondary-color">
+                      <i class="bi bi-calendar-event"></i> Eventos
+                  </a>
+                  <a href="#" class="nav-link d-flex align-items-center gap-3 rounded-3 text-secondary-color">
+                      <i class="bi bi-chat-left-dots"></i> Fórum
+                  </a>
+              </nav>
+  
+              <div class="mt-auto p-3">
+                  <div class="card bg-gradient-blue border-0 text-color p-3 rounded-3">
+                      <p class="small mb-2 fw-bold">Plano Plus</p>
+                      <small class="d-block mb-3 opacity-75">Desbloqueie todos os recursos.</small>
+                      <button class="btn btn-sm btn-light w-100 fw-bold text-primary">Upgrade</button>
+                  </div>
+              </div>
+      </aside>
+
+      <label for="sidebar-toggle" class="sidebar-backdrop"></label>
+  
+      <!-- Dashboard Layout -->
+      <main class="dash-main p-4 overflow-auto">
+          
+          <div class="mb-4">
+              <h1 class="text-color fw-bold">👋 Olá, Pablo! </h1>
+              <p class="text-secondary-color">Continue de onde você parou. Sua jornada está incrível.</p>
+          </div>
+  
+          <div class="alert bg-blue-color border-0 bg-opacity-10 text-color d-flex align-items-center gap-3 fade show" role="alert">
+              <i class="bi bi-info-circle-fill fs-4"></i>
+              <div>
+                  <strong>Nova Funcionalidade:</strong> Agora você pode exportar seu certificado diretamente no LinkedIn!
+              </div>
+              <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+  
+          <!-- Cursos Em Progresso -->
+          <section class="progresso-cursos mb-5">
+            <h5 class="text-color fw-bold mb-3">Conteúdos em progresso<i class="bi bi-chevron-right text-muted small"></i></h5>
+            
+            <div class="d-flex gap-3 overflow-x-auto pb-3 custom-scrollbar">
+
+              <div class="card flex-shrink-0">
+                <div class="position-relative">
+                  <img
+                    src="/assets/images/programacao.png"
+                    class="card-img-top"
+                    alt="Imagem que representa o curso de Programação"
+                  />
+                  <div class="progress position-absolute bottom-0 w-100" style="height: 4px;">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 75%"></div>
+                  </div>
+                </div>
+                <div class="card-body  rounded-2 d-flex flex-column ">
+                      
+                  <h5 class="card-title"><strong>Programação:</strong> Lógica</h5>
+                  <small class="text-muted">Módulo 8: Estrutura de dados </small>
+                  <a href="#" class="btn btn-primary d-none d-sm-none d-md-block d-lg-block bg-secondary-blue-color mt-auto btn-sm"
+                    >Veja Mais
+                  </a>
+                </div>
+              </div>           
+              <div class="card flex-shrink-0">
+                <div class="position-relative">
+                  <img
+                    src="/assets/images/design.png"
+                    class="card-img-top"
+                    alt="Imagem que representa o curso  de UX & Design"
+                  />
+                  <div class="progress position-absolute bottom-0 w-100" style="height: 4px;">
+                    <div class="progress-bar" role="progressbar" style="width: 45% ;">
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body  rounded-2 d-flex flex-column ">
+                      
+                  <h5 class="card-title"><strong>UX & Design:</strong> Grid Layout</h5>
+                  <small class="text-muted">Módulo 4: Figma para Devs</small>
+                  <a href="#" class="btn btn-primary d-none d-sm-none d-md-block d-lg-block bg-secondary-blue-color mt-auto btn-sm"
+                    >Veja Mais
+                  </a>
+                </div>
+              </div>            
+
+
+              <div class="card flex-shrink-0">
+                <div class="position-relative">
+                  <img
+                    src="/assets/images/frontend.png"
+                    class="card-img-top"
+                    alt="Imagem que representa o curso de Front-end"
+                  />
+                  <div class="progress position-absolute bottom-0 w-100" style="height: 4px;">
+                    <div class="progress-bar bg-info" role="progressbar" style="width: 10%">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body rounded-2">
+                  <h5 class="card-title"><strong>Front-End:</strong> Do Básico ao Avançado</h5>
+                  <small class="text-muted">Módulo 1: HTML Semântico</small>
+                  <a href="#" class="btn btn-sm text-color w-100 mt-3">Continuar</a>
+                </div>
+              </div>
+
+            </div>
+          </section>
+          
+          <!-- Acesso Plus -->
+          <section class="content-plus p-0 mb-5 flex-shrink-0">
+            <div class="container-fluid">
+
+              <div class="d-flex align-items-center justify-content-between gap-2 mb-3 w-100">
+                <h5 class="text-color fw-bold m-0">Desbloqueie o acesso total</h5>
+                <span class="badge plus-badge">Plus</span>
+              </div>
+
+              <p class="text-secondary-color">Assine agora o plano Plus a todos os conteúdos da plataforma</p>
+
+              
+              <div class="carousel-container position-relative ">
+
+              <input
+                type="radio"
+                name="slider"
+                id="slide-1"
+                class="d-none"
+                checked
+              />
+
+              <input type="radio" name="slider" id="slide-2" class="d-none" />
+              <input type="radio" name="slider" id="slide-3" class="d-none" />
+
+              <div class="slider-window overflow-hidden">
+
+                
+                <div class="slider-track d-flex flex-row gap-3">
+
+                  <div class="card card-plus col-sm-4 border-0 d-flex flex-row justify-content-center align-items-center">
+                    <div class="card-body px-4 py-2">
+
+                      <div class="d-flex align-items-center mb-2">
+                          <div
+                            class="icon rounded-3 me-3 border-0 text-center fs-4 d-flex justify-content-center align-items-center text-info">
+                            <i class="bi bi-lightbulb"></i>
+                          </div>
+                        
+                          <div>
+                            <h5 class="card-title text-color">Comunicação Assertiva</h5>
+                            
+                              <small class="text-secondary-color d-none d-sm-block">A softskill que garante o jogo</small>
+                          </div>
+                        </div>
+
+                    </div>
+                  </div>
+
+                  <div class="card card-plus col-sm-4 border-0 d-flex flex-row justify-content-center align-items-center">
+                    <div class="card-body px-4 py-2 rounded-2">
+
+                      <div class="d-flex align-items-center mb-2">
+                          <div
+                            class="icon rounded-3 me-3 border-0 text-center fs-4 d-flex justify-content-center align-items-center text-info">
+                            <i class="bi bi-terminal"></i>
+                          </div>
+                        
+                          <div>
+                            <h5 class="card-title text-color">Engenharia de prompt</h5>
+                            
+                              <small class="text-secondary-color d-none d-sm-block ">Domine a arte de criar prompts</small>
+                            
+                          </div>
+                        </div>
+                      
+                    </div>
+                  </div>
+
+                  <div class="card card-plus col-sm-4 border-0 d-flex flex-row justify-content-center align-items-center">
+                    <div class="card-body px-4 py-2 rounded-2">
+
+                      <div class="d-flex align-items-center mb-2">
+                          <div
+                            class="icon rounded-3 me-3 border-0 text-center fs-4 d-flex justify-content-center align-items-center text-info">
+                            <i class="bi bi-cloud-check"></i>
+                          </div>
+                        
+                          <div>
+                            <h5 class="card-title text-color">Criando um SaaS do 0 </h5>
+                            
+                              <small class="text-secondary-color d-none d-sm-block ">Criseu SaaS com Next.js e RBAC</small>
+                            
+                          </div>
+                        </div>
+                                            
+                    </div>
+                  </div>
+
+                  <div class="card card-plus col-sm-4 border-0 d-flex flex-row justify-content-center align-items-center">
+                    <div class="card-body px-4 py-2 rounded-2">
+
+                      <div class="d-flex align-items-center mb-2">
+                          <div
+                            class="icon rounded-3 me-3 border-0 text-center fs-4 d-flex justify-content-center align-items-center text-info">
+                            <i class="bi bi-graph-up-arrow"></i>
+                          </div>
+                        
+                          <div>
+                            <h5 class="card-title text-color">IA para Dados</h5>
+                            
+                              <small class="text-secondary-color d-none d-sm-block">Alavanque à análise com IA</small>
+                          </div>
+                        </div>
+
+                    </div>
+                  </div>
+
+                  <div class="card card-plus col-sm-4 border-0 d-flex flex-row justify-content-center align-items-center">
+                    <div class="card-body px-4 py-2 rounded-2">
+
+                      <div class="d-flex align-items-center mb-2">
+                          <div
+                            class="icon rounded-3 me-3 border-0 text-center fs-4 d-flex justify-content-center align-items-center text-info">
+                            <i class="bi bi-graph-up-arrow"></i>
+                          </div>
+                        
+                          <div>
+                            <h5 class="card-title text-color">IA para Dados</h5>
+                            
+                              <small class="text-secondary-color d-none d-sm-block">Alavanque à análise com IA</small>
+                          </div>
+                        </div>
+                    
+                    </div>
+                  </div>
+
+                  <div class="card card-plus col-sm-4 border-0 d-flex flex-row justify-content-center align-items-center">
+                    <div class="card-body px-4 py-2 rounded-2">
+
+                      <div class="d-flex align-items-center mb-2">
+                          <div
+                            class="icon rounded-3 me-3 border-0 text-center fs-4 d-flex justify-content-center align-items-center text-info">
+                            <i class="bi bi-graph-up-arrow"></i>
+                          </div>
+                        
+                          <div>
+                            <h5 class="card-title text-color">IA para Dados</h5>
+                            
+                              <small class="text-secondary-color d-none d-sm-block">Alavanque à análise com IA</small>
+                          </div>
+                        </div>
+
+                    </div>
+                  </div>
+
+                  <div class="card card-plus col-sm-4 border-0 d-flex flex-row justify-content-center align-items-center">
+                    <div class="card-body px-4 py-2 rounded-2">
+
+                      <div class="d-flex align-items-center mb-2">
+                          <div
+                            class="icon rounded-3 me-3 border-0 text-center fs-4 d-flex justify-content-center align-items-center text-info">
+                            <i class="bi bi-graph-up-arrow"></i>
+                          </div>
+                        
+                          <div>
+                            <h5 class="card-title text-color">IA para Dados</h5>
+                            
+                              <small class="text-secondary-color d-none d-sm-block">Alavanque à análise com IA</small>
+                          </div>
+                        </div>
+
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="controls-group controls-1">
+                <label for="slide-2" class="carousel-control next"
+                  ><i class="bi bi-chevron-right"></i
+                ></label>
+              </div>
+
+              <div class="controls-group controls-2">
+                <label for="slide-1" class="carousel-control prev"
+                  ><i class="bi bi-chevron-left"></i
+                ></label>
+                <label for="slide-3" class="carousel-control next"
+                  ><i class="bi bi-chevron-right"></i
+                ></label>
+              </div>
+
+              <div class="controls-group controls-3">
+                <label for="slide-2" class="carousel-control prev"
+                  ><i class="bi bi-chevron-left"></i
+                ></label>
+              </div>
+
+            </div>
+            </div>
+          </section>
+
+          <!-- Evento Gratuito-->
+          <section class="mb-5">
+            <div class="d-flex align-items-center justify-content-between gap-2 mb-3">
+              <h5 class="text-color fw-bold m-0">Disponível Gratuitamente</h5>
+              <span class="badge bg-danger">Tempo Limitado</span>
+            </div>
+            
+            <div class="card-free border-0 p-4 rounded-4 position-relative overflow-hidden">
+              
+              <div class="row align-items-center position-relative z-1">
+                <div class="col-md-8">
+                  <h3 class="text-color fw-bold">Imersão IA para Devs</h3>
+                  <p class="text-secondary-color">Aprenda a integrar APIs da OpenAI e Gemini nos seus projetos em 3 dias de conteúdo prático.</p>
+                  <label for="modal-feedback-toggle" class="btn rounded-pill  fw-bold px-4">Resgatar Acesso</label>
+                </div>
+                <div class="col-md-4 text-center mt-3 mt-md-0">
+                  <i class="bi bi-robot display-1 text-info opacity-50"></i>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          <!-- Agenda & Novidades -->
+          <article class="mb-5">
+          <div class="container-fluid">
+
+            <div class="d-flex align-items-center justify-content-between gap-2 mb-3 w-100">
+              <h5 class="text-color fw-bold m-0">Sua Agenda & Novidades</h5>
+              <a href="#" class="badge bg-none"><i class="bi bi-plus-circle m-2"></i>Veja Mais</a>
+            </div>
+
+            <p class="text-secondary-color">Acompanhe suas próximas atividades e novidades importantes da plataforma</p>
+
+            <div class="table-responsive glowing-border p-3 p-md-4 rounded-3">
+
+              <table
+                class="table table-dark table-hover align-middle mb-0 tech-table"
+              >
+                <thead>
+                  <tr class="text-info text-uppercase small">
+                    <th scope="col" class="py-3 ps-4">Data</th>
+                    <th scope="col" class="py-3">Eventos</th>
+                    <th scope="col" class="py-3 text- pe-4 ">Status</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td class="ps-4">
+                      <div class="d-flex align-items-center">
+                        <div class="text-center lh-1 me-2">
+                          <span class="d-block fs-4 fw-bold text-warning"
+                            >15</span
+                          >
+                          <small
+                            class="text-uppercase fw-bold text-color"
+                            style="font-size: 0.7rem"
+                            >JAN</small
+                          >
+                        </div>
+                      </div>
+                    </td>
+
+                    <td>
+                      <div class="d-flex justify-content-start align-items-center gap-5">
+
+                        <div class="d-flex align-items-center">
+                          
+                        
+                          <div>
+                            <span class="d-block fw-bold text-color"
+                              >Imersão de Bootstrap</span
+                            >
+                            
+                              <small>Do zero ao avançado</small>
+                            
+                          </div>
+                        </div>
+                        <span
+                        class="badge border border-success text-success rounded-pill px-3 py-2 d-none d-lg-inline-block"
+                        >Gratuita</span>
+                      </div>
+                    </td>
+
+                    <td class="text-center pe-4">
+                        <label
+                          for="modal-toggle"
+                          class="btn btn-sm bg-blue-color text-secondary-color rounded-pill px-3 text-nowrap"
+                        >
+                          Inscreva-se
+                        </label>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td class="ps-4">
+                      <div class="d-flex align-items-center">
+                        <div class="text-center lh-1 me-2">
+                          <span class="d-block fs-4 fw-bold text-warning"
+                            >22</span
+                          >
+                          <small
+                            class="text-uppercase fw-bold text-color"
+                            style="font-size: 0.7rem"
+                            >FEV</small
+                          >
+                        </div>
+                      </div>
+                    </td>
+
+                    <td>
+                      <div class="d-flex justify-content-start align-items-center gap-5">
+
+
+                        <div class="d-flex align-items-center">
+                          
+                      
+                          <div>
+                            <span class="d-block fw-bold text-color"
+                              >Workshop: IA na Prática</span
+                            >
+                            
+                              <small>Live no Youtube</small>
+                                                   
+                          </div>
+                        </div>
+    
+                        <span
+                          class="badge border border-warning text-warning rounded-pill px-3 py-2 d-none d-lg-inline-block"
+                          >próximo evento
+                        </span>
+                      </div>
+
+                    </td>
+                    <td class="text-center pe-4">
+                        <label
+                          for="modal-toggle"
+                          class="btn btn-sm bg-blue-color text-secondary-color fw-bold rounded-pill px-3 text-nowrap "
+                        >
+                          Inscreva-se
+                        </label>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td class="ps-4">
+                      <div class="d-flex align-items-center">
+                        <div class="text-center lh-1 me-2">
+                          <span class="d-block fs-4 fw-bold text-warning"
+                            >01</span
+                          >
+                          <small
+                            class="text-uppercase fw-bold text-color"
+                            style="font-size: 0.7rem"
+                            >MAR</small
+                          >
+                        </div>
+                      </div>
+                    </td>
+
+
+                    <td>
+                      <div class="d-flex justify-content-start align-items-center gap-5">
+
+                        <div class="d-flex align-items-center">
+
+                          <div>
+                            <span class="d-block fw-bold text-color"
+                              >Mentoria de Carreira </span
+                            >
+                                            
+                              <small>Inscrições abertas!</small>
+                            
+                          </div>
+                        </div>
+
+                        <span
+                          class="badge border border-primary text-primary rounded-pill px-3 py-2 d-none d-lg-inline-block"
+                          >Assinantes
+                        </span>
+                      </div>
+
+                    </td>
+
+                    <td class="text-center pe-4">
+                      <button
+                        class="btn btn-sm btn-secondary rounded-pill px-3 text-nowrap" disabled>
+                        Em breve
+                      </button>
+                    </td>
+
+                  </tr>
+
+                </tbody>
+              </table>
+            </di>
+          </div>
+        </article>
+  
+      </main>
+  
+      <!-- Widgets Laterais -->
+      <aside class="dash-widgets p-4 bg-overlay  rounded-2 overflow-auto">
+          
+          <article class="card  bg-overlay mb-4">
+              <div class="card-header border-secondary bg-transparent fw-bold text-color">
+                  <i class="bi bi-bullseye text-warning me-2"></i> Objetivos da Semana
+              </div>
+              <div class="card-body">
+                  <div class="d-flex justify-content-between text-secondary-color small mb-1">
+                      <span>Aulas assistidas</span>
+                      <span>4/10</span>
+                  </div>
+                  <div class="progress mb-3" style="height: 6px;">
+                      <div class="progress-bar bg-primary" style="width: 40%"></div>
+                  </div>
+  
+                  <div class="d-flex justify-content-between text-secondary-color small mb-1">
+                      <span>Desafios de código</span>
+                      <span>1/3</span>
+                  </div>
+                  <div class="progress mb-4" style="height: 6px;">
+                      <div class="progress-bar bg-info" style="width: 33%"></div>
+                  </div>
+  
+                  <div class="d-grid gap-2">
+                      <button class="btn btn-sm">Ver Planejamento</button>
+                      <button class="btn btn-sm">Meu Desempenho</button>
+                  </div>
+              </div>
+          </article>
+  
+          <article class="card discord border-0 bg-gradient-purple text-center text-color">
+              <div class="card-body">
+                  <div class="mb-3">
+                      <i class="bi bi-discord fs-1"></i>
+                  </div>
+                  <h5 class="card-title fw-bold">Comunidade VIP</h5>
+                  <p class="card-text small opacity-75">Tire dúvidas em tempo real com mentores e outros alunos.</p>
+                  <a href="#" class="btn btn-sm btn-light blue-color w-100 fw-bold">Acessar Discord</a>
+              </div>
+          </article>
+  
+      </aside>
+
+    </div>
+
+    <!-- Modal Feedback -->
+    <input type="checkbox" id="modal-feedback-toggle">
+
+    <div class="success-modal">
+      <div class="modal-content">
+
+        <p><i class="bi bi-ticket-perforated fs-3"></i></p>
+        <p>Resgate realizado com sucesso!</p>
+        
+        <label for="modal-feedback-toggle" class="close-modal btn btn-primary  rounded-pill px-3 ">Fechar</label>
+      </div>
+      
+    </div>
+
+  </body>
+</html>
