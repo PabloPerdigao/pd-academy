@@ -1,4 +1,4 @@
-# – Plataforma de Ensino Tech
+# <img src="./assets/images/logo-pd-academy.png" alt="logo PD Academy" width="248"> -  Plataforma de Ensino Tech
 
 Este projeto consiste no desenvolvimento do Front-End de **uma plataforma de ensino tech** focada em tecnologia.  
 O objetivo foi criar uma interface **moderna, responsiva e funcional**, utilizando apenas **HTML5 e CSS3** e **Bootstrap 5**, **sem qualquer uso de JavaScript**, 
