@@ -1,7 +1,9 @@
-# 🚀 PD Academy – Plataforma de Ensino Tech
+# – Plataforma de Ensino Tech
 
-Este projeto consiste no desenvolvimento do **Front-End de uma plataforma de ensino tech** focada em tecnologia.  
-O objetivo foi criar uma interface **moderna, responsiva e funcional**, utilizando apenas **HTML5 e CSS3** e **Bootstrap 5**, **sem qualquer uso de JavaScript**.
+Este projeto consiste no desenvolvimento do Front-End de **uma plataforma de ensino tech** focada em tecnologia.  
+O objetivo foi criar uma interface **moderna, responsiva e funcional**, utilizando apenas **HTML5 e CSS3** e **Bootstrap 5**, **sem qualquer uso de JavaScript**, 
+para reforçar o aprendizado com essas tecnologias.
+
 
 ## 📜 Instruções para desenvolvimento
 
@@ -11,13 +13,20 @@ O objetivo foi criar uma interface **moderna, responsiva e funcional**, utilizan
 
 ---
 
+## 🧑‍💻 Tecnologias
+
+O projeto é foi desenvolvido utilizando as seguintes tecnologias:
+
+ ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white) ![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=flat&logo=bootstrap&logoColor=white)
+
+---
 ## 📂 Estrutura do Projeto
 
 O projeto é composto por três arquivos principais:
 
 - **index.html** → Landing Page institucional  
 - **dashboard.html** → Área logada do aluno (Painel de Controle)  
-- **style.css** → Estilização global, variáveis de tema e lógicas de interação  
+- **style.css** → Estilização geral, variáveis de tema e lógicas de interação  
 
 ---
 
@@ -86,7 +95,7 @@ Página focada na **experiência de aprendizado e acompanhamento de progresso**.
 
 ## 🎨 Bootstrap 5 – Classes Utilizadas
 
-O Bootstrap foi utilizado para acelerar a estruturação do layout e a estilização base.
+Framework Bootstrap utilizado para acelerar a estruturação do layout e a estilização base, colocando em prática o conhecimento adquirido durante o curso.
 
 ### 📐 Grid System
 - `container`, `container-fluid`
@@ -125,25 +134,36 @@ O Bootstrap foi utilizado para acelerar a estruturação do layout e a estiliza�
 
 ## 🛠️ CSS Personalizado – Onde e Por Quê?
 
-Apesar da força do Bootstrap, o **CSS customizado (`style.css`)** foi essencial para três pilares:
+O uso do **CSS (`style.css`)** foi essencial para customização em três pilares:
+
+- Lógica *CSS-only* (sem JavaScript)
+- Responsividade do layout em diferentes dispositivos
+- Identidade visual (tema dark) 
+
 
 ### 🎨 Identidade Visual (Dark Theme)
 - Criação de variáveis CSS (`:root`) com tons de azul profundo  
   (`#000814`, `#001D3D`)
 - Sobrescrita das cores padrão do Bootstrap
 - Uso de `background-image` com **gradientes lineares**
+- Uso de animações/transições simples com `@keyframes` e `transition` para efeitos sutis
+- Customização de botões, cards e tabelas para manter coerência visual
+- Personalização de formulários para melhor usabilidade no tema dark
+- Estilização de modais para integração visual com o restante da página
+- Responsividade aprimorada com media queries específicas
+
 
 ---
 
-### 🧠 Lógica *No-Code* (Sem JavaScript)
+### 🧠 Lógica *CSS-only* (Sem JavaScript)
 
-Como JS era proibido, a solução foi criatividade + CSS:
+Como JS era proibido, a solução foi utilizar as ferramentas disponíveis noCSS:
 
 #### ✔ Checkbox Hack
 - Inputs `checkbox` invisíveis (`display: none`)
 - Controle de estado via seletor de irmãos (`~`)
 
-**Exemplos:**
+**Exemplos de uso:**
 - Sidebar mobile:  
   `#sidebar-toggle:checked ~ .dashboard-grid .dash-sidebar`
 - Modais:  
@@ -168,7 +188,7 @@ Como JS era proibido, a solução foi criatividade + CSS:
 
 ### 🔄 Interatividade sem JavaScript
 **Problema:** Criar modais e carrossel funcionais  
-**Solução:** Uso intenso do **Checkbox Hack**, com labels corretamente vinculados aos inputs invisíveis.
+**Solução:** Uso do **Checkbox Hack**, com labels corretamente vinculados aos inputs invisíveis `d-none`.
 
 ---
 
