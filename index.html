@@ -35,7 +35,8 @@
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark navbar-sticky-top py-3">
         <div class="container">
-          <!-- uso da logo dentro do h1 por quesões de SEO -->
+          
+          <!-- uso da logo dentro do h1 por questões de SEO -->
           <h1 class="pd-logo">
             <a class="navbar-brand" href="#">
               <img
@@ -47,20 +48,8 @@
             </a>
           </h1>
 
-          <!-- uso do checkbox para controlar o menu e expandir  a nav em dispositivos <768px(breakpoint medium no bootstrap).  -->
-
-          <input type="checkbox" id="menu-control" class="d-none" />
-
-          <label
-            for="menu-control"
-            class="navbar-toggler d-lg-none"
-            type="button"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </label>
-
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
+          <div class=" navbar-collapse" id="navbarNav">
+            <ul class="d-flex flex-row justify-content-center navbar-nav ms-auto gap-3">
               <li class="nav-item">
                 <a class="nav-link active" href="#">Início</a>
               </li>
@@ -397,7 +386,7 @@
         <article id="tabela-eventos" class="py-5">
           <div class="container">
 
-            <div class="text-center text-white mb-5">
+            <div class="text-center text-color mb-5">
               <h2 class="fw-bold">
                 Veja o que vem por aí
               </h2>
@@ -407,7 +396,7 @@
             <div class="table-responsive glowing-border p-3 p-md-4 rounded-3">
 
               <table
-                class="table table-dark table-hover align-middle mb-0 custom-tech-table"
+                class="table table-dark table-hover align-middle mb-0 tech-table"
               >
                 <thead>
                   <tr class="text-info text-uppercase small">
@@ -445,7 +434,7 @@
                           </div>
                         
                           <div>
-                            <span class="d-block fw-bold text-white"
+                            <span class="d-block fw-bold text-color"
                               >Imersão de Bootstrap</span
                             >
                             
@@ -497,7 +486,7 @@
                           </div>
                       
                           <div>
-                            <span class="d-block fw-bold text-white"
+                            <span class="d-block fw-bold text-color"
                               >Workshop: IA na Prática</span
                             >
                             
@@ -551,7 +540,7 @@
                           </div>
                           
                           <div>
-                            <span class="d-block fw-bold text-white"
+                            <span class="d-block fw-bold text-color"
                               >Mentoria de Carreira </span
                             >
                                             
@@ -581,6 +570,92 @@
                 </tbody>
               </table>
             </di>
+          </div>
+        </article>
+
+        <!-- Princing -->
+        <article class="pricing-section my-5" id="pricing">
+          <div class="container-fluid">
+            
+            <div class="text-center mb-5">
+              <h5 class="text-info fw-bold text-uppercase ls-2">Assinaturas</h5>
+              <h2 class="text-color fw-bold">Escolha o plano ideal para sua carreira</h2>
+              <p class="text-secondary-color">Evolua suas skills com a melhor comunidade de tecnologia.</p>
+            </div>
+
+            <div class="row justify-content-center g-4">
+              
+              <div class="col-12 col-md-6 col-lg-auto">
+                <div class="card pricing-card h-100 rounded-4">
+                   <div class="card-body p-4 d-flex flex-column">
+                    <h5 class="card-title text-secondary-color text-uppercase fw-bold mb-4">Free</h5>
+                    <div class="mb-4">
+                      <span class="display-4 fw-bold text-color">R$ 0</span>
+                      <small class="text-muted">/mês</small>
+                    </div>
+                    
+                    <ul class="list-unstyled mb-4 flex-grow-1 text-secondary-color gap-2 d-flex flex-column">
+                      <li><i class="bi bi-check-circle-fill text-success me-2"></i>Acesso a 3 cursos introdutórios</li>
+                      <li><i class="bi bi-check-circle-fill text-success me-2"></i>Comunidade aberta no Discord</li>
+                      <li><i class="bi bi-check-circle-fill text-success me-2"></i>Certificado básico</li>
+                      <li class="opacity-50"><i class="bi bi-x-circle me-2"></i>Mentoria de Carreira</li>
+                      <li class="opacity-50"><i class="bi bi-x-circle me-2"></i>Projetos Práticos</li>
+                    </ul>
+
+                    <a href="/dashboard.html" class="btn btn-outline-light rounded-pill w-100 fw-bold mt-auto">Começar Grátis</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 col-lg-auto">
+                <div class="card pricing-card pricing-featured h-100 rounded-4 position-relative">
+                   <div class="position-absolute top-0 start-50 translate-middle">
+                    <span class="badge bg-yellow text-dark rounded-pill px-3 py-2 shadow-sm text-uppercase fw-bold">Mais Popular</span>
+                  </div>
+
+                  <div class="card-body p-4 d-flex flex-column">
+                    <h5 class="card-title text-info text-uppercase fw-bold mb-4">PD Plus</h5>
+                    <div class="mb-4">
+                      <span class="display-4 fw-bold text-color">R$ 29</span>
+                      <small class="text-muted">,90/mês</small>
+                    </div>
+                    
+                    <ul class="list-unstyled mb-4 flex-grow-1 text-secondary-color gap-2 d-flex flex-column">
+                      <li><i class="bi bi-check-circle-fill text-info me-2"></i><strong>Acesso ilimitado</strong> a todos os cursos</li>
+                      <li><i class="bi bi-check-circle-fill text-info me-2"></i>Certificados com validação no LinkedIn</li>
+                      <li><i class="bi bi-check-circle-fill text-info me-2"></i>Projetos reais para portfólio</li>
+                      <li><i class="bi bi-check-circle-fill text-info me-2"></i>Lives exclusivas mensalmente</li>
+                      <li><i class="bi bi-check-circle-fill text-info me-2"></i>Acesso ao fórum VIP</li>
+                    </ul>
+
+                    <button class="btn bg-blue-color text-white rounded-pill w-100 fw-bold mt-auto shadow">Assinar Agora</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 col-lg-auto">
+                <div class="card pricing-card h-100 rounded-4">
+                   <div class="card-body p-4 d-flex flex-column">
+                    <h5 class="card-title text-secondary-color text-uppercase fw-bold mb-4">Enterprise</h5>
+                    <div class="mb-4">
+                      <span class="display-6 fw-bold text-color">Sob Consulta</span>
+                      <small class="text-muted d-block">Para times e empresas</small>
+                    </div>
+                    
+                    <ul class="list-unstyled mb-4 flex-grow-1 text-secondary-color gap-2 d-flex flex-column">
+                      <li><i class="bi bi-check-circle-fill text-success me-2"></i>Tudo do plano Plus</li>
+                      <li><i class="bi bi-check-circle-fill text-success me-2"></i>Gestão de acesso de equipe</li>
+                      <li><i class="bi bi-check-circle-fill text-success me-2"></i>Relatórios de desempenho</li>
+                      <li><i class="bi bi-check-circle-fill text-success me-2"></i>API para integração</li>
+                      <li><i class="bi bi-check-circle-fill text-success me-2"></i>Suporte dedicado 24/7</li>
+                    </ul>
+
+                    <a href="#fale-conosco" class="btn btn-outline-light rounded-pill w-100 fw-bold mt-auto">Falar com Consultor</a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
           </div>
         </article>
 
@@ -703,7 +778,7 @@
             </div>
           </div>
 
-          <div class="col-lg-6">
+          <div class="col-lg-6" id="fale-conosco">
             <h5 class="fw-bold mb-1">Fale Conosco</h5>
             <p class="fs-6">Preencha o formulário de contato abaixo.</p>
               
@@ -744,7 +819,7 @@
         
         <div class="text-center text-muted small">
           <p>
-            &copy; 2024 PD Case - Todos os direitos reservados.
+            &copy; 2026 | PD Academy - Todos os direitos reservados.
           </p>
         </div>
       </div>
@@ -752,7 +827,7 @@
 
 
     <!-- Modal Feedback -->
-    <input type="checkbox" id="modal-feedback-toggle">
+    <input type="checkbox" id="modal-feedback-toggle" class="d-none">
 
     <div class="success-modal">
       <div class="modal-content">

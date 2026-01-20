@@ -131,6 +131,7 @@ small {
 }
 
 
+
 /* HERO-SECTION */
 
 .hero-section .row {
@@ -164,7 +165,7 @@ small {
   }
 
   .hero-section h2 {
-    font-size: 2.4rem;
+    font-size: 1.8rem;
   }
 
   .hero-section p {
@@ -318,34 +319,8 @@ small {
   }
 }
 
-/* --- COMUNIDADE --- */
-#comunidade .card {
-  background-color: transparent;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
 
-#comunidade .card:hover {
-
-  transform: translateY(-10px);
-  transition: transform 0.5s ease;
-}
-
-#comunidade .card h2 {
-  font-size: 2rem;
-  color: var(--off-white-color);
-}
-
-#comunidade .card i {
-  font-size: 2rem;
-  color: var(--off-white-color);
-}
-
-#comunidade .card p {
-  font-size: 1rem;
-  color: #f8f5e7d0;
-}
-
-/* --- TABELA TECH --- */
+/* --- tabela tech --- */
 
 .glowing-border {
   background-color: #001220;
@@ -395,6 +370,104 @@ small {
 
 .tech-table tbody tr:last-child td {
   border-bottom: 0;
+}
+
+/* --- pricing --- */
+
+.ls-2 {
+  letter-spacing: 2px;
+}
+
+
+.pricing-card {
+  background-color: var(--secondary-blue-color); 
+  border: 1px solid rgba(255, 255, 255, 0.1); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+
+  width: 318px; 
+  margin: 0 auto; 
+  width: 100%; 
+}
+
+.pricing-card:hover {
+  transform: translateY(-10px); 
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  border-color: var(--primary-blue-color);
+}
+
+
+.pricing-featured {
+  background: linear-gradient(180deg, rgba(0, 53, 102, 0.3) 0%, var(--secondary-blue-color) 100%);
+  border: 1px solid var(--primary-blue-color); 
+  box-shadow: 0 0 15px rgba(13, 202, 240, 0.1); 
+}
+
+
+.pricing-featured .badge {
+  background-color: var(--secondary-yellow-color) !important;
+  color: var(--primary-dark-blue) !important;
+  top: 0;
+  z-index: 2;
+}
+
+.pricing-featured .btn {
+  background-color: var(--primary-blue-color);
+  color: var(--off-white-color);
+  font-weight: bold;
+}
+
+.pricing-featured .btn:hover {
+  background-color: #0dcaf0;
+  color: var(--primary-dark-blue);
+}
+
+
+.pricing-card .bi-check-circle-fill {
+  font-size: 1.1rem;
+}
+
+
+.pricing-card .opacity-50 {
+  text-decoration: line-through;
+}
+
+
+@media (min-width: 1200px) {
+  .pricing-featured {
+    transform: scale(1.05);
+    z-index: 1;
+  }
+  
+  .pricing-featured:hover {
+    transform: scale(1.08) translateY(-10px);
+  }
+}
+
+/* --- comunidade --- */
+#comunidade .card {
+  background-color: transparent;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#comunidade .card:hover {
+
+  transform: translateY(-10px);
+  transition: transform 0.5s ease;
+}
+
+#comunidade .card h2 {
+  font-size: 2rem;
+  color: var(--off-white-color);
+}
+
+#comunidade .card i {
+  font-size: 2rem;
+  color: var(--off-white-color);
+}
+
+#comunidade .card p {
+  font-size: 1rem;
+  color: #f8f5e7d0;
 }
 
 /*  --- DASHBOARD | PD ACADEMY --- */
