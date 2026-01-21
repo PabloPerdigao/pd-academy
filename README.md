@@ -7,6 +7,7 @@ para reforçar o aprendizado com essas tecnologias.
 
 ## 📜 Instruções para desenvolvimento
 
+O foco central é colocar em prática o conhecimento em desenvolvimento web já adquirido e reforçar os estudos feitos pela PD EAD; demonstrando domínio do Grid System, Flexbox, seletores CSS para suprir a ausência de JavaScript com o uso do framework Bootstrap, garantindo interatividade e responsividade.
 
 [Instruções seguidas para o desenvolvimento do projeto](https://github.com/L0pe5/ProjetoBootstrap)
 
