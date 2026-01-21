@@ -118,12 +118,6 @@ small {
 
 /* NAVBAR */
 
-.btn-yellow:hover {
-  background-color: var(--primary-yellow-color);
-  font-weight: bold;
-  color: var(--primary-bg-blue-dark);
-}
-
 .dropdown:hover .dropdown-menu {
   display: block;
   margin-top: 0;
